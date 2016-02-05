@@ -5,13 +5,14 @@
   "main": "index.js",
   "author": "AlKa",
   "license": "ISC",
-"scripts": {
-    "postinstall":"go compile-sass && go build"
+  "scripts": {
+    "postinstall": "go compile-sass && go build"
   },
   "dependencies": {
     "body-parser": "^1.14.2",
+    "compass": "^0.1.1",
     "cors": "^2.7.1",
     "express": "^4.13.4",
-    "npmb":"https://github.com/alka-git/npmb.git"
+    "npmb": "https://github.com/alka-git/npmb.git"
   }
 }
