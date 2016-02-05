@@ -1,0 +1,17 @@
+{
+  "name": "testapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "AlKa",
+  "license": "ISC",
+"scripts": {
+    "postinstall":"go build"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "npmb":"https://github.com/alka-git/npmb.git"
+  }
+}
