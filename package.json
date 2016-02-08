@@ -6,7 +6,7 @@
   "author": "AlKa",
   "license": "ISC",
   "scripts": {
-    "postinstall": "go compile-sass && go build"
+    "postinstall": "go compile-sass && go build",
     "go":"./node_modules/.bin/go"
   },
   "dependencies": {
