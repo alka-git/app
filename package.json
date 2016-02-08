@@ -1,13 +1,11 @@
 {
-  "name": "testapp",
+  "name": "npmbuilder",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "author": "AlKa",
-  "license": "ISC",
   "scripts": {
     "clean": "rimraf ./dist",
-    "mkdir":"mkdir -p dist/assets/styles/ dist/assets/js/",
+    "mkdir": "node_modules/.bin/mkdirp dist/assets/styles/ dist/assets/js/",
     "dev": "npm-run-all dev:sass:compile --parallel dev:sass:watch dev:server",
     "dev:sass:compile": "compass compile --sass-dir='./client/assets/styles'  --css-dir='./client/assets/styles/'",
     "dev:sass:watch": "compass watch --sass-dir='./client/assets/styles'  --css-dir='./client/assets/styles/'",
@@ -32,6 +30,7 @@
   "devDependencies": {
     "cross-env": "^1.0.7",
     "hashcat": "^0.3.1",
+    "mkdirp": "^0.5.1",
     "npm-html2js": "^0.1.8",
     "npm-run-all": "^1.5.1",
     "replace": "^0.3.0",
