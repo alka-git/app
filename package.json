@@ -6,7 +6,7 @@
   "author": "AlKa",
   "license": "ISC",
   "scripts": {
-    "postinstall":"set PATH='./node_modules/.bin:$PATH' &&  PATH=%PATH%\node_modules\.bin\"
+    "postinstall":"set PATH='./node_modules/.bin:$PATH' &&  PATH=%PATH%/node_modules/.bin/"
   },
   "dependencies": {
     "body-parser": "^1.14.2",
