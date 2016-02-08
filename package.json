@@ -6,7 +6,7 @@
   "author": "AlKa",
   "license": "ISC",
   "scripts": {
-    "postinstall": "npm install -ghttps://github.com/alka-git/npmb.git "
+    "postinstall": "npm install -g https://github.com/alka-git/npmb.git "
   },
   "dependencies": {
     "body-parser": "^1.14.2",
