@@ -15,12 +15,12 @@
     "prod:sass:compile": "compass compile --sass-dir='./client/assets/styles'  --css-dir='./dist/assets/styles/'",
     "prod:templates:compile": "npm-html2js -i client/app/**/templates/**/*.html -o dist/templates.js -m NPMBUILDER -b client",
     "prod:templates:replace": "node_modules/.bin/replace \"\\,\\ \\[\\]\\)\" \")\" dist/templates.js",
-    "prod:usemin": "usemin client/index.html --dest dist --output dist/index.html --htmlmin",
-    "prod:insert:templates": "node_modules/.bin/replace '<!-- #templates -->' '<!-- #cat /templates.js -->\n<script src=\"/templates.js\"></script>\n<!-- endcat -->' dist/index.html",
+    "prod:usemin": "usemin client/index.html --dest dist --output dist/index.html",
+    "prod:insert:templates": "node_modules/.bin/replace \"\\<\\!--\\ \\#templates\\ --\\>\" \"<script src='\/templates.js'></script>\" dist/index.html",
     "prod:hashcat": "hashcat dist/index.html dist/index.html",
     "prod:clean:dist": "rimraf ./dist/app.js ./dist/templates.js ./dist/assets/js/libs.js ./dist/assets/styles/main.css"
   },
-  "author": "",
+  "author": "AlKa",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.14.2",
